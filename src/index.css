@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lilita+One&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Lilita One", sans-serif;
+  --font-outfit: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom colors to match the warm, rich tones of the clone image */
+  --color-tomato-dark: #1e0a0a;
+  --color-tomato-red: #da291c;
+  --color-tomato-orange: #f2a900;
+  --color-tomato-cream: #faf5ea;
+}
+
+/* Fluid root typography for seamless proportional scaling on ALL screen sizes */
+html {
+  --global-scale-multiplier: 1.0;
+  /* Continuously and smoothly scales from compact mobile up to large screens without breakpoints or jumps */
+  font-size: calc(clamp(10px, 0.75vw + 7px, 22px) * var(--global-scale-multiplier));
+  transition: font-size 0.05s ease-out;
+
+/* Global background image */
+body {
+  background-image: url('https://i.pinimg.com/736x/0d/72/5e/0d725e501834e4a46637b2c8bc388a73.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
+}
+
+}
+

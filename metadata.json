@@ -1,0 +1,10 @@
+{
+  "name": "Remix: Remix: Tomato \u0026 Burger",
+  "description": "A high-fidelity landing page for gourmet pizza and burgers, complete with elegant menus and animations.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
